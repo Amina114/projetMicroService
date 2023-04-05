@@ -9,13 +9,19 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.esprit</groupId>
+<<<<<<< HEAD:Authentication-service/pom.xml
 	<artifactId>authentification-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>authentification-service</name>
 	<description>authentification microservice</description>
+=======
+	<artifactId>employee-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>employee-service</name>
+	<description>employee microservice</description>
+>>>>>>> 886445a8aeb339a6338dfc1f33002abeb4166eab:pom.xml
 	<properties>
-		<java.version>1.8</java.version>
-		<spring-cloud.version>2021.0.5</spring-cloud.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
