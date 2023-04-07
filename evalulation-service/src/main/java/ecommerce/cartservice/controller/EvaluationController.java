@@ -35,7 +35,7 @@ public class EvaluationController {
         }
     }
 
-    @GetMapping(value ="/{id}")
+    @GetMapping(value ="getEvaluationById/{id}")
     public ResponseEntity<Evaluation> getEvaluationById(@PathVariable("id") UUID id) {
         Optional<Evaluation> evaluation = this.evaluationService.getEvaluationById(id);
         if (evaluation.isPresent()) {
@@ -52,7 +52,7 @@ public class EvaluationController {
 
     }
 
-    @PutMapping(value ="/{id}")
+    @PutMapping(value ="updateEvaluation/{id}")
     public ResponseEntity<Evaluation> updateEvaluation(@PathVariable("id") UUID id, @RequestBody Evaluation evaluationDto) {
         try {
             return new ResponseEntity<>(this.evaluationService.updateEvaluation(evaluationDto, id), HttpStatus.OK);
@@ -61,7 +61,7 @@ public class EvaluationController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("deleteEvaluation/{id}")
     public ResponseEntity<HttpStatus> deleteEvaluation(@PathVariable("id") UUID id) {
         try {
             this.evaluationService.deleteEvaluation(id);
