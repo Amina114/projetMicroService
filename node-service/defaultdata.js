@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'Fadhel Ben Hamida',
-  email: 'mfbenhmida@vermeg.com',
-  phone: '+216 52636541',
+  name: 'Marwen Ben Mahmoud',
+  email: 'mbenmahmoud@vermeg.com',
+  phone: '+216 97897320',
   skills: [
     'Postgresql', 'Rest',
     'English',    'Docker',       

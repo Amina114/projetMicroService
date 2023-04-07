@@ -36,12 +36,12 @@ public class AuthenticationMicroserviceApplication {
 			roleService.saveRole(Role.builder().name("USER").build());
 
 			// init users list
-			userService.saveUser( User.builder().email("fakhri@gmail.com").password("fakhri123").username("fakhri").roles(new  ArrayList<>()).build()) ;
+			userService.saveUser( User.builder().email("marwen@gmail.com").password("marwen123").username("marwen").roles(new  ArrayList<>()).build()) ;
 			userService.saveUser( User.builder().email("houssem@gmail.com").password("houssem123").username("houssem").roles(new  ArrayList<>()).build()) ;
 
-
-//			//init role / users
-//			userService.addRoleToUser("fakhri" , "ADMIN" );
+ 
+			//init role / users
+		userService.addRoleToUser("marwen" , "ADMIN" );
 //			userService.addRoleToUser("sarah" , "USER" );
 //			userService.addRoleToUser("Jhon" , "USER" );
 		} ;

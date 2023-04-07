@@ -4,12 +4,12 @@ services:
       container_name: candidat-service
       build: ./candidat-service
       ports:
-        - "8083:8083"
+        - "8082:8082"
       hostname: candidate
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
       image: "candidate-service"
-      depends_on:
+      depends_on: 
         - Eureka
 
 
@@ -96,8 +96,9 @@ services:
           - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=eureka-server
         depends_on:
           - "Eureka"
-        command: "node ./index.js"
 
+
+        command: "node ./index.js"
     Eureka:
       container_name: eureka-server
       build: ./eureka-server
@@ -105,5 +106,5 @@ services:
         - "8761:8761"
       hostname: eureka-server
       image: "eureka-server"
-      environment:
+      environment: 
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
