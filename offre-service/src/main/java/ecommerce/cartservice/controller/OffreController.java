@@ -23,7 +23,7 @@ public class OffreController {
 
 	@Autowired
     OffreService offreService;
-
+        
     @GetMapping
     public ResponseEntity<List<Offre>> getAllOffre() {
         List<Offre> offres = this.offreService.getAllOffres();

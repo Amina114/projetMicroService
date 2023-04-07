@@ -2,7 +2,7 @@
 Our project consists of creating a Human Resources plateform for employees looking for new job offers. 
 Stack : SpringBoot - NodeJS - Eureka webservices  <br>
 
-Our project has a microservices based architecture which relays on the usage of 6 main components (employee microservice / Job Offer microservice / Participation microservice / Participant microservice/ Job evaluation microservice /  Authentication microservice / NodeEureka Server / Node JS external microservice used for CV uploads) ###
+Our project has a microservices based architecture which relays on the usage of 6 main components (employee microservice / Job Offer microservice / Participation microservice / Participant microservice/ Job evaluation microservice /  Authentication microservice / Eureka Server / Node JS external microservice used for CV uploads) ###
 
 <br>
 

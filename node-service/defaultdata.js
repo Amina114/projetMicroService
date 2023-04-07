@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'Houssem Zerai',
-  email: 'houssemzerai@gmail.com',
-  phone: '+216 23049235',
+  name: 'Fadhel Ben Hamida',
+  email: 'mfbenhmida@vermeg.com',
+  phone: '+216 52636541',
   skills: [
     'Postgresql', 'Rest',
     'English',    'Docker',       
@@ -19,7 +19,7 @@ module.exports = {
   ],
   education: [
     {
-      name: 'Computer Science Higher Institute Of Computer Science Tunisia Languages',
+      name: 'Higher institute Of management of Tunisia',
       dates: [Array],
       date_start: 'January 2017',
       date_end: 'June 2020'
@@ -47,7 +47,7 @@ module.exports = {
     {
       title: 'Software Developer',
       dates: [Array],
-      organization: 'Rivalztn Tunisia'
+      organization: 'VERMEG Tunisia'
     }
   ]
 }
