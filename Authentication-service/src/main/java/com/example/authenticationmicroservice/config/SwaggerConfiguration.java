@@ -31,7 +31,7 @@ public class SwaggerConfiguration {
     private ApiInfo getApiInfo() {
         return new ApiInfo(
                 "MicroService Sample App based on Spring Boot",
-                "App to demonstrate authenticationmicroserviceure MicroService based on Spring Boot",
+                "App to demonstrate Candidature MicroService based on Spring Boot",
                 "0.0.1-SNAPSHOT",
                 "Terms of Service",
                 new Contact("fakhri amri",

@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class authenticationmicroserviceApplication {
+public class AuthenticationMicroserviceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(authenticationmicroserviceApplication.class, args);
+		SpringApplication.run(AuthenticationMicroserviceApplication.class, args);
 	}
 
 
