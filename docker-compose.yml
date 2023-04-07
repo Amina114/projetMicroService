@@ -1,8 +1,8 @@
 version: "2.2"
 services:
     Candidate:
-      container_name: candidate-service
-      build: ./candidate-service
+      container_name: candidat-service
+      build: ./candidat-service
       ports:
         - "8083:8083"
       hostname: candidate
@@ -41,7 +41,7 @@ services:
       container_name: evaluation-service
       build: ./evalulation-service
       ports:
-        - "8083:8083"
+        - "8088:8088"
       hostname: evaluation
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
