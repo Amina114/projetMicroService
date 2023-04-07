@@ -42,7 +42,7 @@ services:
       container_name: evaluation-service
       build: ./evalulation-service
       ports:
-        - "8085:8085"
+        - "8083:8083"
       hostname: evaluation
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/

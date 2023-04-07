@@ -1,10 +1,10 @@
-package com.microservice.candidat;
+package ecommerce.cartservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CandidatApplicationTests {
+class EvaluationServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -9,17 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.esprit</groupId>
-<<<<<<< HEAD:Authentication-service/pom.xml
-	<artifactId>authentification-service</artifactId>
+	<artifactId>evaluation-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>authentification-service</name>
-	<description>authentification microservice</description>
-=======
-	<artifactId>employee-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>employee-service</name>
-	<description>employee microservice</description>
->>>>>>> 886445a8aeb339a6338dfc1f33002abeb4166eab:pom.xml
+	<name>evaluation-service</name>
+	<description>evaluation microservice</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -69,39 +62,7 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>5.7.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.auth0</groupId>
-			<artifactId>java-jwt</artifactId>
-			<version>3.19.1</version>
-		</dependency>
-		<dependency>
-<<<<<<< HEAD:Authentication-service/pom.xml
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>5.7.6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-config</artifactId>
-			<version>5.7.6</version>
-		</dependency>
 
-=======
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.swagger</groupId>
-			<artifactId>swagger-annotations</artifactId>
-			<version>1.5.20</version>
-		</dependency>
-		
->>>>>>> a61adc479fa3c7f6c8e3653740fdffc263034c37:evaluation/pom.xml
 	</dependencies>
 
 	<build>
