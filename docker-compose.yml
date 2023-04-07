@@ -14,7 +14,7 @@ services:
         - Mongo
 
 
-    Candidature:
+    Participation:
       container_name: participation_service
       build: ./participation_service
       ports:
