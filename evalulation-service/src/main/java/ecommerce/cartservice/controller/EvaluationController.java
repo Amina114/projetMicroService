@@ -24,7 +24,7 @@ public class EvaluationController {
 	@Autowired
     EvaluationService evaluationService;
 
-    @GetMapping
+    @GetMapping("/getAllEvaluation")
     public ResponseEntity<List<Evaluation>> getAllEvaluation() {
         List<Evaluation> evaluations = this.evaluationService.getAllEvaluations();
         if (evaluations.isEmpty()) { 
@@ -45,7 +45,7 @@ public class EvaluationController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/createEvaluation")
     public ResponseEntity<Evaluation> createEvaluation(@RequestBody Evaluation evaluationDto) {
         Evaluation evaluation = this.evaluationService.createEvaluation(evaluationDto);
         return new ResponseEntity<>(evaluation, HttpStatus.CREATED);
