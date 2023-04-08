@@ -17,7 +17,10 @@ spring:
           uri: lb://candidate-service
           predicates:
             - Path=/GestionCandidat/**
-            - Path=/candidatures/**
+        - id: participant
+          uri: lb://participation-service
+          predicates:
+            - Path=/participant/**
         - id : auth-service
           uri: lb://auth-service
           predicates:
