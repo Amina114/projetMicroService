@@ -9,3 +9,6 @@ Our project has a microservices based architecture which relays on the usage of 
 Our cloud architecture will be based on a dockerization concept which enables our project to be deployed using docker images via 
 docker compose file
 # powered by Esprit-Vermeg-Team
+
+
+For further Documentation you can visit https://documenter.getpostman.com/view/26764362/2s93XsX5ev
