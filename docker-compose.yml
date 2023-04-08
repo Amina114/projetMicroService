@@ -4,11 +4,11 @@ services:
       container_name: candidat-service
       build: ./candidat-service
       ports:
-        - "8082:8082"
+        - "8045:8045"
       hostname: candidate
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
-      image: "candidate-service"
+      image: "candidate-service" 
       depends_on: 
         - Eureka
 
@@ -18,7 +18,7 @@ services:
       build: ./participation_service
       ports:
         - "8084:8084"
-      hostname: candidate
+      hostname: Participation
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
       image: "participation_service"
@@ -41,7 +41,7 @@ services:
       container_name: evaluation-service
       build: ./evalulation-service
       ports:
-        - "8088:8088"
+        - "8085:8085"
       hostname: evaluation
       environment:
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
@@ -106,5 +106,5 @@ services:
         - "8761:8761"
       hostname: eureka-server
       image: "eureka-server"
-      environment: 
+      environment:   
         - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/

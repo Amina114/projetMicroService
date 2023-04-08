@@ -16,7 +16,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(value = "/evaluations")
+@RequestMapping(value = "/evaluation")
 @Api(value = "Evaluation API")
 @AllArgsConstructor
 public class EvaluationController {

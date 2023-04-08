@@ -24,21 +24,6 @@ public class SwaggerConfiguration {
                 .apis(RequestHandlerSelectors
                         .basePackage("ecommerce.cartservice"))
                 .paths(PathSelectors.any())
-                .build()
-                .apiInfo(getApiInfo());
-    }
-
-    private ApiInfo getApiInfo() {
-        return new ApiInfo(
-                "MicroService Sample App based on Spring Boot",
-                "App to demonstrate MicroService based on Spring Boot",
-                "0.0.1-SNAPSHOT",
-                "Terms of Service",
-                new Contact("Fatma MAZARI",
-                        "",
-                        ""),
-                "",
-                "",
-                Collections.emptyList());
+                .build();
     }
 }

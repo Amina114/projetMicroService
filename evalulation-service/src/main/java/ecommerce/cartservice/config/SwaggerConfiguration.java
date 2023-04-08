@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.Collections;
 
 @Configuration
-@EnableSwagger2
+@EnableSwagger2 
 public class SwaggerConfiguration {
 
     @Bean
@@ -24,21 +24,6 @@ public class SwaggerConfiguration {
                 .apis(RequestHandlerSelectors
                         .basePackage("ecommerce.cartservice"))
                 .paths(PathSelectors.any())
-                .build()
-                .apiInfo(getApiInfo());
-    }
-
-    private ApiInfo getApiInfo() {
-        return new ApiInfo(
-                "MicroService Sample App based on Spring Boot",
-                "App to demonstrate MicroService based on Spring Boot",
-                "0.0.1-SNAPSHOT",
-                "Terms of Service",
-                new Contact("Adib Ouechani",
-                        "",
-                        ""),
-                "",
-                "",
-                Collections.emptyList());
+                .build();
     }
 }
